@@ -3,6 +3,12 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const { EditPhotoHandler } = require('./feature/edit_foto');
 const { ChatAIHandler } = require('./feature/chat_ai');
 
+new Client({
+	...,
+	puppeteer: {
+		args: ['--no-sandbox'],
+	}
+})
 
 
 const client = new Client({
