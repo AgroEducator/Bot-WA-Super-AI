@@ -4,7 +4,6 @@ const { EditPhotoHandler } = require('./feature/edit_foto');
 const { ChatAIHandler } = require('./feature/chat_ai');
 
 new Client({
-	...,
 	puppeteer: {
 		args: ['--no-sandbox'],
 	}
